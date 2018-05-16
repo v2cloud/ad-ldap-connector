@@ -4,7 +4,7 @@ var _             = require('lodash');
 var async         = require('async');
 var nconf         = require('nconf');
 var url           = require('url');
-var test_url      = 'https://' + url.parse(nconf.get('PROVISIONING_TICKET')).host + '/test';
+var test_url      = 'http://' + url.parse(nconf.get('PROVISIONING_TICKET')).host + '/test';
 var exit          = require('./lib/exit');
 
 /**
